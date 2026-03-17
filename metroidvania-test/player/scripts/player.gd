@@ -7,7 +7,7 @@ class_name Player extends CharacterBody2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 
-@export var move_speed : float = 200 
+@export var move_speed : float = 180 
 @export var max_fall_velocity: float = 600
 
 var states: Array[ PlayerState ]

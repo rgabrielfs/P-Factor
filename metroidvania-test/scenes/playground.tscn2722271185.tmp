@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://c0rb5w3trr34m"]
+
+[ext_resource type="Texture2D" uid="uid://c46ovt85g71wd" path="res://icon.svg" id="1_qchbg"]
+[ext_resource type="PackedScene" uid="uid://be2p5bjigf8yd" path="res://player/player.tscn" id="2_kddj0"]
+[ext_resource type="PackedScene" uid="uid://bur0n3xc36soq" path="res://player2.tscn" id="3_mm0a5"]
+[ext_resource type="Shader" uid="uid://1q62w6cndyhr" path="res://scenes/sepiavignetta.gdshader" id="3_q8s1k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wt17y"]
+size = Vector2(118.20766, 122)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qchbg"]
+size = Vector2(120.64371, 120.47064)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q8s1k"]
+shader = ExtResource("3_q8s1k")
+shader_parameter/blur_strength = 2.0
+shader_parameter/radius = 0.35
+shader_parameter/softness = 0.45
+shader_parameter/darkness = 0.5
+
+[node name="Playground" type="Node2D" unique_id=1147006997]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1120231275]
+position = Vector2(366.99997, 351)
+scale = Vector2(10.0078125, 1)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=2086601486]
+position = Vector2(3.0493754e-06, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=1853232598]
+position = Vector2(3.1590462e-06, -1)
+shape = SubResource("RectangleShape2D_wt17y")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=738436872]
+position = Vector2(-40, 193)
+scale = Vector2(0.80078113, 3.2421875)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D2" unique_id=95516283]
+position = Vector2(3.0493754e-06, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/StaticBody2D" unique_id=830171865]
+position = Vector2(3.1590462e-06, -1)
+shape = SubResource("RectangleShape2D_wt17y")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=1796263544]
+position = Vector2(421, 302)
+scale = Vector2(0.80078113, 1.4726564)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D4" unique_id=1481124095]
+position = Vector2(3.0493754e-06, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D4/StaticBody2D" unique_id=1045823666]
+position = Vector2(3.1590462e-06, -1)
+shape = SubResource("RectangleShape2D_wt17y")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=1528869062]
+position = Vector2(171.00003, 296.99997)
+scale = Vector2(0.80078113, 1.4726564)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D5" unique_id=617782958]
+position = Vector2(3.0493754e-06, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D5/StaticBody2D" unique_id=494927372]
+position = Vector2(3.1590462e-06, -1)
+shape = SubResource("RectangleShape2D_wt17y")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1588860951]
+position = Vector2(675, -49.999985)
+scale = Vector2(0.80078113, 3.2421875)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D3" unique_id=1099737239]
+position = Vector2(3.0493754e-06, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D3/StaticBody2D" unique_id=1060994153]
+position = Vector2(3.1590462e-06, -1)
+shape = SubResource("RectangleShape2D_wt17y")
+
+[node name="Platform" type="Sprite2D" parent="." unique_id=547774207]
+position = Vector2(174.00002, 128)
+scale = Vector2(2.71875, 0.13281249)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platform" unique_id=608175840]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform/StaticBody2D" unique_id=240474539]
+position = Vector2(-0.36781693, 0)
+scale = Vector2(0.9999996, 0.99999964)
+shape = SubResource("RectangleShape2D_qchbg")
+one_way_collision = true
+
+[node name="Player" parent="." unique_id=260783507 instance=ExtResource("2_kddj0")]
+position = Vector2(73.00001, 65)
+scale = Vector2(1.4, 1.4)
+
+[node name="Player2" parent="." unique_id=2065552947 instance=ExtResource("3_mm0a5")]
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=971125396]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2048756972]
+material = SubResource("ShaderMaterial_q8s1k")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

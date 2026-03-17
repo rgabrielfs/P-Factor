@@ -2,12 +2,20 @@
 
 [ext_resource type="Texture2D" uid="uid://c46ovt85g71wd" path="res://icon.svg" id="1_qchbg"]
 [ext_resource type="PackedScene" uid="uid://be2p5bjigf8yd" path="res://player/player.tscn" id="2_kddj0"]
+[ext_resource type="Shader" uid="uid://1q62w6cndyhr" path="res://scenes/sepiavignetta.gdshader" id="3_q8s1k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wt17y"]
 size = Vector2(118.20766, 122)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qchbg"]
 size = Vector2(120.64371, 120.47064)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q8s1k"]
+shader = ExtResource("3_q8s1k")
+shader_parameter/blur_strength = 2.0
+shader_parameter/radius = 0.35
+shader_parameter/softness = 0.45
+shader_parameter/darkness = 0.5
 
 [node name="Playground" type="Node2D" unique_id=1147006997]
 
@@ -89,3 +97,13 @@ one_way_collision = true
 [node name="Player" parent="." unique_id=260783507 instance=ExtResource("2_kddj0")]
 position = Vector2(73.00001, 65)
 scale = Vector2(1.4, 1.4)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=971125396]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2048756972]
+material = SubResource("ShaderMaterial_q8s1k")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

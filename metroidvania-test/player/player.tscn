@@ -8,8 +8,8 @@
 [ext_resource type="Script" uid="uid://2mvwie2gfky5" path="res://player/states/crouch.gd" id="6_g6k8r"]
 [ext_resource type="Texture2D" uid="uid://chmugbr5likrt" path="res://player/sprites/zero_test.png" id="8_rgyib"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rgyib"]
-size = Vector2(20, 41)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_boad6"]
+height = 34.545452
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g6k8r"]
 radius = 11.0
@@ -132,6 +132,7 @@ _data = {
 [node name="Player" type="CharacterBody2D" unique_id=260783507]
 collision_layer = 0
 collision_mask = 3
+floor_constant_speed = true
 script = ExtResource("1_oul6g")
 
 [node name="States" type="Node" parent="." unique_id=1330493630]
@@ -161,8 +162,9 @@ texture = ExtResource("8_rgyib")
 hframes = 45
 
 [node name="CollisionStand" type="CollisionShape2D" parent="." unique_id=1030916990]
-position = Vector2(0, 3.5)
-shape = SubResource("RectangleShape2D_rgyib")
+position = Vector2(0, 5)
+scale = Vector2(1.1, 1.1)
+shape = SubResource("CapsuleShape2D_boad6")
 
 [node name="CollisionCrouch" type="CollisionShape2D" parent="." unique_id=933879658]
 position = Vector2(0, 11)

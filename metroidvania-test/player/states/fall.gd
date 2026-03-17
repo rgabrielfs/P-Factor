@@ -17,11 +17,11 @@ func enter() -> void:
 		coyote_timer = 0
 	else:
 		coyote_timer = coyote_time
-	coyote_timer = coyote_time
 	pass
 
 func exit() -> void:
 	player.gravity_multiplier = 1.0
+	buffer_timer = 0
 	pass
 
 func handle_input( _event: InputEvent ) -> PlayerState:
@@ -41,7 +41,8 @@ func process( _delta: float) -> PlayerState:
 
 func physics_process( _delta: float) -> PlayerState:
 	if player.is_on_floor():
-		if buffer_timer > 0:
+		#if buffer_timer > 0 and Input.is_action_pressed( "jump" ):
+		if buffer_timer > 0 :
 			return jump
 		return idle
 	player.velocity.x = player.direction.x * player.move_speed
