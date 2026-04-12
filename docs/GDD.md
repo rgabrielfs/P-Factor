@@ -21,8 +21,6 @@ A coming of age set in a WW2 Bullet Hell with metroidvania mechanics
 - Bullet Hell
 - Metroidvania
 - RPG
-- Visual Novel
-- Coming Of Age
 
 ## Público-Alvo
 
