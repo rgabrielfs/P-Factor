@@ -35,21 +35,24 @@ Jogadores de Bullet Hell e RPG de 15 a 45 anos que apreciam histórias longas, h
 | Item                      | Link                       |
 | ------------------------- | -------------------------- |
 | Build jogável             | Itch.io / WebGL / Download |
-| Repositório               | GitHub                     |
-| Vídeo gameplay (opcional) | YouTube                    |
+| Repositório               | [GitHub ](https://github.com/Demasoft/P-Factor) |
+| Gameplay                  | YouTube                    |
 | Instruções de execução    | Requisitos técnicos        |
-
----
 
 # 3. Pesquisa e Referências
 
 ## Jogos de Referência
 
+| Item                      | Inspiração                  | Referência                 |
+| ------------------------- | -------------------------- | -------------------------- |
+| Progear | Este é a principal inspiração do projeto P-Factor. Se trata de um Bullet Hell desenvolvido pela CAVE, que além de possuir uma aparência vibrante e um visual "steampunk", gira em torno de uma curta história sobre um grupo de jovens dedicados a mudar o rumo do conflito abordado no jogo.| ![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkpPoli_bbghGQqRP6y0a5ZBkGmEcpmJfUDQ&s) | 
+| Repositório               | [GitHub ](https://github.com/Demasoft/P-Factor) |
+| Gameplay                  | YouTube                    | |
+| Instruções de execução    | Requisitos técnicos        | |
+
 Liste **2–5 jogos que inspiraram o projeto**.
 
 para cada jogo descreva brevemente o jogo, os aspectos que inpiram. Adicione imagens para ilustrar.
-
----
 
 ## Análise das Referências
 
