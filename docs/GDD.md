@@ -61,12 +61,13 @@ Explique brevemente:
 
 # 4. Hipóteses de Design
 
-Liste hipóteses que serão testadas durante o desenvolvimento.
-
-| Hipótese                               | Como será testada               |
-| -------------------------------------- | ------------------------------- |
-| jogadores gostam de progressão rápida  | playtest com fases curtas       |
-| combate simples melhora acessibilidade | protótipo com 1 botão de ataque |
+| Hipótese                                                           | Como será testada                                                                      |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| As primeiros minutos de gameplay são essenciais para o engajamento | Ação primeiro e diálogo depois, prologo com gameplay em ambos os cenários (ar e terra) |
+| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
+| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
+| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
+| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
 
 ## Pilares do jogo
 
@@ -78,15 +79,9 @@ Liste hipóteses que serão testadas durante o desenvolvimento.
 
 ## Core Loop
 
-Descreva o ciclo principal do jogo.
-
-Exemplo:
-
-Explorar → enfrentar inimigos → coletar recursos → melhorar personagem → continuar explorando
+Engajar Missão (bullet hell) → derrotar ameaça aérea → coletar itens → concluir missão (boss) → explorar hangar (metroidvânia) → explorar cenário → adquirir/ encontrar itens → acatar missões secundárias → explorar hangar → aprimorar aeronave → engajar missão (volta ao bullet hell)
 
 ## Loops Secundários
-
----
 
 ## Mecânicas Principais
 
@@ -98,25 +93,23 @@ Explorar → enfrentar inimigos → coletar recursos → melhorar personagem →
 
 ## Camera
 
-- Tipo de câmera
+Gameplay: Side scroll 2D
 
----
+Cutscenes: animações curtas de ângulos variados
 
 ## Sistemas
 
 **Vitória**
 
-Condição para vencer.
+Derrota de todos os inimigos em campo.
 
 **Derrota**
 
-Condição para perder.
+Perda da aeronave ou do piloto.
 
 **Progressão**
 
-Sistema de níveis, pontos ou upgrades.
-
----
+Em P-Factor, pilotos (personagens) com diferentes aeronaves adereçadas a eles, ganham experiência em missões e eventos na história do jogo. Ao subir de nível, aumentam atributos, desbloqueiam novos aprimoramentos e podem evoluir suas aeronaves através uma mecânica de adaptação de maquina, desbloqueada ao progredir a história. A quantidade de EXP necessária cresce a cada nível, tornando o progresso mais difícil. O sistema vai do nível 1 ao 100.
 
 # 6. Escopo do Projeto
 
@@ -124,9 +117,9 @@ Defina claramente **o que será implementado**.
 
 ## O jogo inclui
 
-- X fases
-- X tipos de inimigos
-- X mecânicas principais
+- 7 fases
+- 5 categorias de inimigos
+- 4 mecânicas principais
 
 ## O jogo não inclui
 
