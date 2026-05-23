@@ -61,19 +61,17 @@ Explique brevemente:
 
 # 4. Hipóteses de Design
 
-| Hipótese                                                           | Como será testada                                                                      |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| As primeiros minutos de gameplay são essenciais para o engajamento | Ação primeiro e diálogo depois, prologo com gameplay em ambos os cenários (ar e terra) |
-| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
-| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
-| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
-| combate simples melhora acessibilidade                             | protótipo com 1 botão de ataque                                                        |
+| Hipótese                                                                                                                                                                                                                                                                                                                                                                          | Como será testada                                                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As primeiros minutos de gameplay são essenciais para o engajamento                                                                                                                                                                                                                                                                                                                | Ação primeiro e diálogo depois, prologo com gameplay em ambos os cenários (ar e terra / air and ground)                                                       |
+| Dialogos não precisam ser excessivamente longos, ainda que seja uma aventura de roleplay, muitos dos jogadores buscam pelo constante ciclo de desafio e recompensa, um dos fatores que motiva o player a realmente jogar o jogo e criar interesse pela trama                                                                                                                      | Diálogos serão cuidadosamente "scriptados" para durar menos em cutscenes, além de ser mais objetivos, dependendo do propósito do direcionamento da gameplay   |
+| Jogadores sentem falta profundidade dos personagens em muitos jogos "retro", Na época do NES por exemplo, muitos jovens se apegavam aos personagens que controlavam, embora as desenvolvedoras não tinham budget ou espaço no cartucho para incluir elementos que dessem mais caráter a esses personagens, cada jogador tinha uma visão / concepção específica daquele personagem | Durante a gameplay, o jogador pode ler e ouvir dialogos entre personagens, que podem ser engatilhados dependendo das ações do player                          |
+| Usuários que testam o produto antes de ler as instruções... Muitos dos jogadores testam diferentes botões assim que assumem o controle da cena                                                                                                                                                                                                                                    | Haverá sim um tutorial, mas ele será suscinto e não nessessáriamente imediado, o jogador deve seguir o "feeling" e posteriormente será provisionado um manual |
+| combate simples melhora acessibilidade                                                                                                                                                                                                                                                                                                                                            | protótipo com 1 botão de ataque                                                                                                                               |
 
 ## Pilares do jogo
 
-- 3 a 5 no máximo
-
----
+-
 
 # 5. Gameplay
 
@@ -171,9 +169,35 @@ _Adicione imagens/prototipos/mockups de tela_
 
 ## Controles
 
-- diagrama e disposição dos inputs e o que fazem
+### AIR
 
----
+- D-Pad == Directional Pad
+- RSB == Right Stick Button
+- LSB == Left Stick Button
+- RB == Right Bumper
+- RT == Right Trigger
+- LB == Left Bumper
+- LT == Left Trigger
+- Y == Y Button (Top)
+- A == A Button (Bottom)
+- X == X Button (Left)
+- B == B Button (Right)
+
+![xbox-button-layout](https://user-images.githubusercontent.com/580022/45268303-10a03e80-b4ce-11e8-883c-1f586566c040.png)
+
+### GROUND
+
+- D-Pad == Directional Pad
+- RSB == Right Stick Button
+- LSB == Left Stick Button
+- RB == Right Bumper
+- RT == Right Trigger
+- LB == Left Bumper
+- LT == Left Trigger
+- Y == Y Button (Top)
+- A == A Button (Bottom)
+- X == X Button (Left)
+- B == B Button (Right)
 
 # 9. Direção Visual
 
@@ -191,9 +215,7 @@ Exemplo:
 
 ## Referências Visuais
 
-Links ou imagens que inspiram o estilo do jogo.
-
----
+📌 https://jp.pinterest.com/rgabrielfialho/pfctr/
 
 # 10. Áudio (tabela/onde usar/loop/descrição)
 
@@ -225,12 +247,12 @@ Exemplo:
 
 ## Tecnologias Utilizadas
 
-| Categoria     | Ferramenta                |
-| ------------- | ------------------------- |
-| Engine        | Unity / Godot / Unreal    |
-| Linguagem     | C# / GDScript / C++       |
-| Versionamento | Git + GitHub              |
-| Assets        | Asset Store / OpenGameArt |
+| Categoria     | Ferramenta   |
+| ------------- | ------------ |
+| Engine        | Godot        |
+| Linguagem     | GDScript     |
+| Versionamento | Git + GitHub |
+| Assets        | Aseprite /   |
 
 ---
 
