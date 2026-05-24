@@ -121,7 +121,7 @@ Defina claramente **o que será implementado**.
 
 ## O jogo não inclui
 
-- multiplayer online
+- multiplayer online\* (em análise)
 - sistema complexo de crafting
 - geração procedural avançada
 
@@ -131,12 +131,12 @@ Defina claramente **o que será implementado**.
 
 Descreva os protótipos realizados durante o desenvolvimento.
 
-| Protótipo        | Objetivo         | Resultado       |
-| ---------------- | ---------------- | --------------- |
-| movimento básico | validar controle | aprovado        |
-| combate          | testar ritmo     | precisa ajustes |
-
----
+| Protótipo                 | Objetivo         | Resultado    |
+| ------------------------- | ---------------- | ------------ |
+| state machine de piloto   | validar controle | aprovado     |
+| state machine de aeronave | validar controle | aprovado     |
+| mecânica de overboost     | validar status   | em andamento |
+| HUD                       | validar display  | em andamento |
 
 # 8. Interface (UI/UX)
 
@@ -151,8 +151,6 @@ Exemplo:
 - barra de vida
 - pontuação
 - timer
-
----
 
 ## Menus
 
@@ -169,6 +167,20 @@ _Adicione imagens/prototipos/mockups de tela_
 
 ## Controles
 
+### GROUND
+
+- D-Pad == Directional Pad
+- RSB == Right Stick Button
+- LSB == Left Stick Button
+- RB == Right Bumper
+- RT == Right Trigger
+- LB == Left Bumper
+- LT == Left Trigger
+- Y == Y Button (Top)
+- A == A Button (Bottom)
+- X == X Button (Left)
+- B == B Button (Right)
+
 ### AIR
 
 - D-Pad == Directional Pad
@@ -184,20 +196,6 @@ _Adicione imagens/prototipos/mockups de tela_
 - B == B Button (Right)
 
 ![xbox-button-layout](https://user-images.githubusercontent.com/580022/45268303-10a03e80-b4ce-11e8-883c-1f586566c040.png)
-
-### GROUND
-
-- D-Pad == Directional Pad
-- RSB == Right Stick Button
-- LSB == Left Stick Button
-- RB == Right Bumper
-- RT == Right Trigger
-- LB == Left Bumper
-- LT == Left Trigger
-- Y == Y Button (Top)
-- A == A Button (Bottom)
-- X == X Button (Left)
-- B == B Button (Right)
 
 # 9. Direção Visual
 
