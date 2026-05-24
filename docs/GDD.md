@@ -41,7 +41,7 @@ Jogadores de Bullet Hell e RPG de 15 a 45 anos que apreciam histórias longas, h
 
 # 3. Pesquisa e Referências
 
-## Jogos de Referência
+## Jogos de Referência e Análise
 
 | Item                                              | Inspiração                                                                                                                                                                                                                                                                                                                                                                                                                            | Referência                                                                                                                                                           |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,15 +49,6 @@ Jogadores de Bullet Hell e RPG de 15 a 45 anos que apreciam histórias longas, h
 | Megaman Zero                                      | O Jogo da franquia Megaman, desenvolvido a princípio para o gameboy advance, inspira fortemente o sistema de exploração "a pé" no projeto, visto que seus níveis estão todos conectados, como um "metroidvânia", mesmo sendo considerado um platformer baseado em missões. Além disso, o dialogo e a forma como cutscenes são renderizadas no game, também inspiram P-Factor, sendo elas relativamente "Low Budget"                   | ![Alt Text](https://i.ytimg.com/vi/r9cybJ4bcy8/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHuAYACoAGKAgwIABABGGUgUihUMA8=&rs=AOn4CLDrvDN_WItVJ-FFOVM9oRJN36ZgDA) |
 | Record of Lodoss War: Deedlit in Wonder Labyrinth | Desenvolvido pelo Team Ladybug, este é um metroidvânia inspirado em títulos como Castlevania SOTN, mas o que chama atenção é seu design de som, cores, UI intuitiva e sua mecânica com o arco, que permite o player atirar projeteis de uma maneira interessante, que faz sentido com o projeto                                                                                                                                       | ![Alt Text](https://i0.wp.com/waytoomany.games/wp-content/uploads/2022/01/2022012613410800-8D5DA3F4CA5D98FAA574C2346CF80226.jpg?ssl=1)                               |
 | Nier Automata                                     | Yoko Taro, seu criador, diz na palestra documentada "Making Weird Games For Weird People" que os jogos são apenas mais uma maneira de contar histórias, e Nier faz isso de forma excepcional, dando profundidade aos personagens durante a gameplay, além de mesclar os gêneros hack'em Slash e Shoot'em Up de uma maneira inusitada, assim como P-factor busca revitalizar o Gênero chamando a atenção de um novo nicho de jogadores | ![Alt Text](https://i.ytimg.com/vi/OLq4L_zBZK4/maxresdefault.jpg)                                                                                                    |
-
-## Análise das Referências
-
-Explique brevemente:
-
-- o que esses jogos fazem bem
-- quais ideias inspiraram seu projeto
-
----
 
 # 4. Hipóteses de Design
 
@@ -67,7 +58,7 @@ Explique brevemente:
 | Dialogos não precisam ser excessivamente longos, ainda que seja uma aventura de roleplay, muitos dos jogadores buscam pelo constante ciclo de desafio e recompensa, um dos fatores que motiva o player a realmente jogar o jogo e criar interesse pela trama                                                                                                                      | Diálogos serão cuidadosamente "scriptados" para durar menos em cutscenes, além de ser mais objetivos, dependendo do propósito do direcionamento da gameplay   |
 | Jogadores sentem falta profundidade dos personagens em muitos jogos "retro", Na época do NES por exemplo, muitos jovens se apegavam aos personagens que controlavam, embora as desenvolvedoras não tinham budget ou espaço no cartucho para incluir elementos que dessem mais caráter a esses personagens, cada jogador tinha uma visão / concepção específica daquele personagem | Durante a gameplay, o jogador pode ler e ouvir dialogos entre personagens, que podem ser engatilhados dependendo das ações do player                          |
 | Usuários que testam o produto antes de ler as instruções... Muitos dos jogadores testam diferentes botões assim que assumem o controle da cena                                                                                                                                                                                                                                    | Haverá sim um tutorial, mas ele será suscinto e não nessessáriamente imediado, o jogador deve seguir o "feeling" e posteriormente será provisionado um manual |
-| combate simples melhora acessibilidade                                                                                                                                                                                                                                                                                                                                            | protótipo com 1 botão de ataque                                                                                                                               |
+| combate simples melhora acessibilidade, mas jogadores gostam de vencer utilizando mecânicas específicas para explorar fraquezas por exemplo                                                                                                                                                                                                                                       | protótipo com 1 botão para engatilhar especial (bomba), e outro para atirar                                                                                   |
 
 ## Pilares do jogo
 
@@ -80,6 +71,8 @@ Explique brevemente:
 Engajar Missão (bullet hell) → derrotar ameaça aérea → coletar itens → concluir missão (boss) → explorar hangar (metroidvânia) → explorar cenário → adquirir/ encontrar itens → acatar missões secundárias → explorar hangar → aprimorar aeronave → engajar missão (volta ao bullet hell)
 
 ## Loops Secundários
+
+Engajar Missão (bullet hell) → derrotar ameaça aérea → coletar itens → concluir missão (boss) → explorar hangar (metroidvânia) → explorar cenário → adquirir/ encontrar itens → acatar missões secundárias → explorar hangar → aprimorar aeronave → engajar missão (volta ao bullet hell)
 
 ## Mecânicas Principais
 
@@ -144,14 +137,6 @@ Descreva os protótipos realizados durante o desenvolvimento.
 
 Elementos visíveis durante o jogo.
 
-_Adicione imagens/prototipos/mockups de tela_
-
-Exemplo:
-
-- barra de vida
-- pontuação
-- timer
-
 ![Alt Text](/docs/img/hud.jpg)
 
 ## Menus
@@ -159,45 +144,57 @@ Exemplo:
 _Adicione imagens/prototipos/mockups de tela_
 
 - menu principal
+
+![Alt Text](/docs/img/main_menu.png)
+
 - pause
+
+![Alt Text](/docs/img/pause_menu.jpg)
+
 - game over
+
+![Alt Text](/docs/img/game_over.png)
+
 - configurações
 
-![Alt Text](/docs/img/main_menu.jpg)
+![Alt Text](/docs/img/config.jpg)
 
 ## Flow de menus
 
-- diagrama
+![Alt Text](/docs/img/menu_flow.png)
 
 ## Controles
 
 ### GROUND
 
-- D-Pad == Directional Pad
-- RSB == Right Stick Button
-- LSB == Left Stick Button
-- RB == Right Bumper
-- RT == Right Trigger
-- LB == Left Bumper
-- LT == Left Trigger
-- Y == Y Button (Top)
-- A == A Button (Bottom)
-- X == X Button (Left)
-- B == B Button (Right)
+- D-Pad == Movivento básico (baixo = crouch\*) (Mira item equipado quando LT está pressionado)
+- RSB == Olhar
+- LSB == Movivento básico (Mira item equipado quando LT está pressionado)
+- RB == Dash
+- RT == Usa item equipado (quando LT está pressionado)
+- LB == Dash
+- LT == Saca item equipado
+
+Podem variar com pilotos diferentes
+
+- Y == ataque
+- A == pulo
+- X == ataque
+- B == pulo
 
 ### AIR
 
-- D-Pad == Directional Pad
-- RSB == Right Stick Button
-- LSB == Left Stick Button
-- RB == Right Bumper
-- RT == Right Trigger
-- LB == Left Bumper
-- LT == Left Trigger
-- Y == Y Button (Top)
-- A == A Button (Bottom)
-- X == X Button (Left)
-- B == B Button (Right)
+- D-Pad == Movivento básico
+- RSB == - (Aponta alvo quando teleguiados são equipados)
+- LSB == Movivento básico
+- RB == Troca arma
+- RT == Atira (Atira especial quando LB é pressionado)
+- LB == Troca arma
+- LT == Prepara especial (Ex.: bomba)
+- Y == Y Button (Top) Pode variar\*
+- A == A Button Esquiva (Ativa Overboost ao pressionar quando não há mais esquivas)
+- X == X Button (Left) Pode variar\*
+- B == B Button (Right) Pode variar\*
 
 ![xbox-button-layout](https://user-images.githubusercontent.com/580022/45268303-10a03e80-b4ce-11e8-883c-1f586566c040.png)
 
@@ -205,133 +202,13 @@ _Adicione imagens/prototipos/mockups de tela_
 
 ## Direção de Arte
 
-_Adicione imagens/prototipos/ mood board_
-
-Exemplo:
-
-- pixel art
-- low poly
-- cartoon
-
----
-
-## Referências Visuais
+- Moodboard
 
 📌 https://jp.pinterest.com/rgabrielfialho/pfctr/
 
-# 10. Áudio (tabela/onde usar/loop/descrição)
+_Adicione imagens/prototipos/ mood board_
 
-Tipos de áudio utilizados:
+- pixel art
+- cartoon
 
-- música de fundo
-- efeitos sonoros
-- narração (se houver)
-
----
-
-# 11. Animação (tabela/onde usar/loop/descrição)
-
-- Todos as animações usadas eonde
-
----
-
-# 12. Arquitetura de Software
-
-Descreva a estrutura geral do código.
-
-Exemplo:
-
-- GameManager central
-- sistema de eventos
-- scripts separados por responsabilidade
-
----
-
-## Tecnologias Utilizadas
-
-| Categoria     | Ferramenta   |
-| ------------- | ------------ |
-| Engine        | Godot        |
-| Linguagem     | GDScript     |
-| Versionamento | Git + GitHub |
-| Assets        | Aseprite /   |
-
----
-
-# 12. Testes e Playtests
-
-## Playtests
-
-| Data  | Participantes | Principais problemas |
-| ----- | ------------- | -------------------- |
-| DD/MM | 5 pessoas     | controles confusos   |
-| DD/MM | 10 pessoas    | dificuldade elevada  |
-
----
-
-## Melhorias Implementadas
-
-Problema → solução aplicada.
-
-Exemplo:
-
-Jogadores não entendiam o objetivo inicial → tutorial adicionado.
-
----
-
-# 13. Cronograma
-
-detalhe os principais milestones do projeto.
-
-# 14. Riscos do Projeto
-
-| Risco             | Impacto           | Mitigação                    |
-| ----------------- | ----------------- | ---------------------------- |
-| IA muito complexa | atraso no projeto | simplificar comportamento    |
-| performance baixa | experiência ruim  | otimizar ou reduzir inimigos |
-
----
-
-# 15. Limitações Conhecidas
-
-Liste funcionalidades planejadas mas não implementadas.
-
-Exemplo:
-
-- multiplayer online
-- sistema de save em nuvem
-- novas fases
-
----
-
-# 16. Decisões Importantes
-
-Registro de mudanças relevantes durante o projeto.
-
-| Data  | Decisão                     | Motivo              |
-| ----- | --------------------------- | ------------------- |
-| março | remover sistema de crafting | escopo muito grande |
-| abril | adicionar dash              | melhorar mobilidade |
-
----
-
-# 17. Créditos
-
-Liste assets externos utilizados.
-
-| Recurso | Fonte        | Licença |
-| ------- | ------------ | ------- |
-| sprites | OpenGameArt  | CC0     |
-| música  | compositor X | CC-BY   |
-
----
-
-# 17. Reflexão Final
-
-Explique brevemente:
-
-- principais desafios
-- aprendizados técnicos
-- o que faria diferente
-
-1–3 parágrafos são suficientes.
+## Referências Visuais
