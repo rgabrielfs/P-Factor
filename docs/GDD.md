@@ -152,6 +152,8 @@ Exemplo:
 - pontuação
 - timer
 
+![Alt Text](/docs/img/hud.jpg)
+
 ## Menus
 
 _Adicione imagens/prototipos/mockups de tela_
@@ -160,6 +162,8 @@ _Adicione imagens/prototipos/mockups de tela_
 - pause
 - game over
 - configurações
+
+![Alt Text](/docs/img/main_menu.jpg)
 
 ## Flow de menus
 
