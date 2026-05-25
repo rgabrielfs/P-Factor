@@ -62,7 +62,9 @@ Jogadores de Bullet Hell e RPG de 15 a 45 anos que apreciam histórias longas, h
 
 ## Pilares do jogo
 
--
+- História: O jogo é guiado principalmente pela história e foca em atingir o player com uma mensagem, que revela os princípios errônios de uma guerra entre humanos e suas consequências, além de explorar o tema familiar.
+
+- Gameplay: O jogo busca entreter o player até o final ao dar diversos loops de desafios e uma gameplay frenética de bullet hell, além de proporcionar mecânicas extras como o overboost, que permite a aeronave ir além de sua capacidade, facilitando a esquiva de projeteis, e ativar uma habilidade única, que podem ser combinadas para chegar ao objetivo mais rápido.
 
 # 5. Gameplay
 
@@ -72,15 +74,19 @@ Engajar Missão (bullet hell) → derrotar ameaça aérea → coletar itens → 
 
 ## Loops Secundários
 
-Engajar Missão (bullet hell) → derrotar ameaça aérea → coletar itens → concluir missão (boss) → explorar hangar (metroidvânia) → explorar cenário → adquirir/ encontrar itens → acatar missões secundárias → explorar hangar → aprimorar aeronave → engajar missão (volta ao bullet hell)
+Adquirir peças → voltar ao hangar → equipar aeronave → checar requisitos → encontrar requisitos → evoluir aeronave → adquirir mais peças
 
 ## Mecânicas Principais
 
-| Mecânica  | Descrição                 |
-| --------- | ------------------------- |
-| Movimento | como o jogador se desloca |
-| Combate   | como o jogador ataca      |
-| Interação | como interage com objetos |
+| Mecânica     | Descrição                                                                                                                                                       |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Movimento    | como o jogador se desloca                                                                                                                                       |
+| Combate      | como o jogador pode combater tanto em terra quanto no ar (piloto e aeronave)                                                                                    |
+| Interação    | como interage com objetos e NPCs                                                                                                                                |
+| Comércio     | O jogador compra e vende itens                                                                                                                                  |
+| Customização | O jogador equipa a aeronave com diferentes peças que mudam seus status                                                                                          |
+| Modificação  | O jogador desbloqueia modificações ao encontrar certos requisitos, o que permite a "evolução" da aeronave, tornando-se em uma versão aprimorada com novos stats |
+| Overboost    | O jogador compra e vende itens                                                                                                                                  |
 
 ## Camera
 
@@ -206,9 +212,12 @@ Podem variar com pilotos diferentes
 
 📌 https://jp.pinterest.com/rgabrielfialho/pfctr/
 
-_Adicione imagens/prototipos/ mood board_
-
-- pixel art
 - cartoon
 
-## Referências Visuais
+![plane](/docs/img/plane_1.jpg)
+
+![plane2](/docs/img/pso_wasp_system.jpg)
+
+![p](/docs/img/p.jpg)
+
+![lucio](/docs/img/lucio.jpg)
