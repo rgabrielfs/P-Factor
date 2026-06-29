@@ -62,9 +62,11 @@ Jogadores de Bullet Hell e RPG de 15 a 45 anos que apreciam histórias longas, h
 
 ## Pilares do jogo
 
-- História: O jogo é guiado principalmente pela história e foca em atingir o player com uma mensagem, que revela os princípios errônios de uma guerra entre humanos e suas consequências, além de explorar o tema familiar.
+- Plot: O jogo é guiado principalmente pela história e foca em atingir o player com uma mensagem, que revela os princípios errônios de uma guerra entre humanos e suas consequências, além de explorar o tema familiar.
 
 - Gameplay: O jogo busca entreter o player até o final ao dar diversos loops de desafios e uma gameplay frenética de bullet hell, além de proporcionar mecânicas extras como o overboost, que permite a aeronave ir além de sua capacidade, facilitando a esquiva de projeteis, e ativar uma habilidade única, que podem ser combinadas para chegar ao objetivo mais rápido.
+
+- Lore: Esta historia faz uso de conceitos reais para explicar eventos científicos fictíceis. O jogo buscará introduzir conteúdos diferentes ao exaurir falas de personagens bem como no design observável durante a gameplay.  
 
 # 5. Gameplay
 
