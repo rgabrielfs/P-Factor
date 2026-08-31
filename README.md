@@ -2,6 +2,8 @@
 
 # P-Factor
 
+Assista o vídeo:
+
 [![Watch the video](https://img.youtube.com/vi/fQcg2tLZ5v8/maxresdefault.jpg)](https://youtu.be/fQcg2tLZ5v8)
 
 </div>
