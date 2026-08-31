@@ -3,12 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://c46ovt85g71wd" path="res://icon.svg" id="1_qchbg"]
 [ext_resource type="PackedScene" uid="uid://be2p5bjigf8yd" path="res://player/player.tscn" id="2_kddj0"]
 [ext_resource type="Shader" uid="uid://1q62w6cndyhr" path="res://shaders/sepiavignetta.gdshader" id="3_q8s1k"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wt17y"]
-size = Vector2(118.20766, 122)
+[ext_resource type="Script" uid="uid://cej4p4vnaw1j3" path="res://player/scripts/level_bounds.gd" id="4_q8s1k"]
+[ext_resource type="PackedScene" uid="uid://b5cvwpxdertfv" path="res://general/level_transition/level_transition.tscn" id="5_mm0a5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qchbg"]
 size = Vector2(120.64371, 120.47064)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wt17y"]
+size = Vector2(118.20766, 122)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_q8s1k"]
 shader = ExtResource("3_q8s1k")
@@ -19,16 +21,58 @@ shader_parameter/darkness = 0.5
 
 [node name="Playground" type="Node2D" unique_id=1147006997]
 
+[node name="Platform2" type="Sprite2D" parent="." unique_id=644800010]
+position = Vector2(297, 320)
+scale = Vector2(2.71875, 0.13281249)
+texture = ExtResource("1_qchbg")
+
+[node name="Platform" type="Sprite2D" parent="Platform2" unique_id=547774207]
+position = Vector2(-45.977013, -1445.6472)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platform2/Platform" unique_id=608175840]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2/Platform/StaticBody2D" unique_id=240474539]
+position = Vector2(-0.36781693, 0)
+scale = Vector2(0.9999996, 0.99999964)
+shape = SubResource("RectangleShape2D_qchbg")
+one_way_collision = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platform2" unique_id=1628165048]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2/StaticBody2D" unique_id=1212085439]
+position = Vector2(-0.36781693, 0)
+scale = Vector2(0.9999996, 0.99999964)
+shape = SubResource("RectangleShape2D_qchbg")
+one_way_collision = true
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1120231275]
-position = Vector2(366.99997, 351)
-scale = Vector2(10.0078125, 1)
+position = Vector2(-40, 351)
+scale = Vector2(3.5742188, 1)
 texture = ExtResource("1_qchbg")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D" unique_id=2086601486]
 position = Vector2(3.0493754e-06, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D" unique_id=1853232598]
-position = Vector2(3.1590462e-06, -1)
+position = Vector2(3.8146973e-06, -1)
+shape = SubResource("RectangleShape2D_wt17y")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=222575088]
+position = Vector2(640, 351)
+scale = Vector2(3.5742188, 1)
+texture = ExtResource("1_qchbg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D6" unique_id=567085103]
+position = Vector2(3.0493754e-06, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D6/StaticBody2D" unique_id=1906402295]
+position = Vector2(3.8146973e-06, -1)
 shape = SubResource("RectangleShape2D_wt17y")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=738436872]
@@ -79,21 +123,6 @@ position = Vector2(3.0493754e-06, 1)
 position = Vector2(3.1590462e-06, -1)
 shape = SubResource("RectangleShape2D_wt17y")
 
-[node name="Platform" type="Sprite2D" parent="." unique_id=547774207]
-position = Vector2(174.00002, 128)
-scale = Vector2(2.71875, 0.13281249)
-texture = ExtResource("1_qchbg")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Platform" unique_id=608175840]
-collision_layer = 2
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform/StaticBody2D" unique_id=240474539]
-position = Vector2(-0.36781693, 0)
-scale = Vector2(0.9999996, 0.99999964)
-shape = SubResource("RectangleShape2D_qchbg")
-one_way_collision = true
-
 [node name="Player" parent="." unique_id=260783507 instance=ExtResource("2_kddj0")]
 position = Vector2(73.00001, 65)
 scale = Vector2(1.4, 1.4)
@@ -107,3 +136,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="LevelBounds" type="Node2D" parent="." unique_id=533630642]
+z_index = 256
+position = Vector2(-62, -14)
+script = ExtResource("4_q8s1k")
+width = 704
+height = 366
+metadata/_custom_type_script = "uid://cej4p4vnaw1j3"
+
+[node name="LevelTransition" parent="." unique_id=409620985 instance=ExtResource("5_mm0a5")]
+position = Vector2(640, 287)
+size = 4
+target_level = "uid://cr4vhm31bd2gx"
+
+[node name="LevelTransition2" parent="." unique_id=1627874893 instance=ExtResource("5_mm0a5")]
+position = Vector2(222, 391)
+target_level = "uid://cr4vhm31bd2gx"
