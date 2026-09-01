@@ -14,12 +14,20 @@ config/name="pfctr"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SceneManager="*uid://cu26uan7elsbr"
+
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
 window/size/mode=3
 window/stretch/mode="canvas_items"
+
+[global_group]
+
+Player=""
 
 [input]
 
