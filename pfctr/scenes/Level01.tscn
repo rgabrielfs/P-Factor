@@ -39,8 +39,10 @@ width = 640
 height = 430
 metadata/_custom_type_script = "uid://cej4p4vnaw1j3"
 
-[node name="LevelT_03" parent="." unique_id=1072128697 instance=ExtResource("5_520st")]
+[node name="lv1_right" parent="." unique_id=1072128697 instance=ExtResource("5_520st")]
 position = Vector2(627, 296)
+transition_id = "lv1_right"
 size = 9
 location = 1
 target_level = "uid://cr4vhm31bd2gx"
+target_transition_id = "pg2_left"

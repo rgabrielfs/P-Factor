@@ -19,7 +19,7 @@ shader_parameter/darkness = 0.5
 [node name="Level02" type="Node2D" unique_id=1927396577]
 
 [node name="Platform" type="Sprite2D" parent="." unique_id=140687600]
-position = Vector2(491.00003, 360.00003)
+position = Vector2(487.00003, 387.00003)
 scale = Vector2(0.8787497, 0.13281247)
 texture = ExtResource("1_w6u7p")
 
@@ -58,8 +58,10 @@ width = 640
 height = 430
 metadata/_custom_type_script = "uid://cej4p4vnaw1j3"
 
-[node name="LevelT_03" parent="." unique_id=1072128697 instance=ExtResource("5_vjrih")]
-position = Vector2(435, 399)
-size = 3
+[node name="lv2_down" parent="." unique_id=1072128697 instance=ExtResource("5_vjrih")]
+position = Vector2(423, 398)
+transition_id = "lv2_down"
+size = 4
 location = 3
 target_level = "uid://cr4vhm31bd2gx"
+target_transition_id = "pg2_up"

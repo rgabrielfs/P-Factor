@@ -48,20 +48,16 @@ width = 640
 height = 430
 metadata/_custom_type_script = "uid://cej4p4vnaw1j3"
 
-[node name="pg2_left" parent="." unique_id=409620985 instance=ExtResource("5_tulhy")]
+[node name="LevelT_02" parent="." unique_id=409620985 instance=ExtResource("5_tulhy")]
 position = Vector2(-15, 296)
-transition_id = "pg2_left"
 size = 9
 target_level = "uid://biwpjf43oeg7m"
-target_transition_id = "lv1_right"
 
-[node name="LevelTransition2" parent="." unique_id=1917394845 instance=ExtResource("5_tulhy")]
-position = Vector2(257, -32)
-transition_id = "pg2_up"
+[node name="LevelT_top" parent="LevelT_02" unique_id=1917394845 instance=ExtResource("5_tulhy")]
+position = Vector2(271, -328)
 size = 4
 location = 2
 target_level = "uid://ctji5ss445da"
-target_transition_id = "lv2_down"
 
 [node name="Platform" type="Sprite2D" parent="." unique_id=1455267592]
 position = Vector2(297, 217.00002)
