@@ -16,7 +16,7 @@ shader_parameter/radius = 0.35
 shader_parameter/softness = 0.45
 shader_parameter/darkness = 0.5
 
-[node name="02" type="Node2D" unique_id=1927396577]
+[node name="Level02" type="Node2D" unique_id=1927396577]
 
 [node name="Platform" type="Sprite2D" parent="." unique_id=140687600]
 position = Vector2(491.00003, 360.00003)
@@ -58,8 +58,8 @@ width = 640
 height = 430
 metadata/_custom_type_script = "uid://cej4p4vnaw1j3"
 
-[node name="LevelT_03" parent="." unique_id=1072128697 groups=["Player"] instance=ExtResource("5_vjrih")]
+[node name="LevelT_03" parent="." unique_id=1072128697 instance=ExtResource("5_vjrih")]
 position = Vector2(435, 399)
-size = 4
+size = 3
 location = 3
 target_level = "uid://cr4vhm31bd2gx"

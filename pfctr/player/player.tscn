@@ -161,7 +161,7 @@ script = ExtResource("6_g6k8r")
 texture = ExtResource("8_rgyib")
 hframes = 45
 
-[node name="CollisionStand" type="CollisionShape2D" parent="." unique_id=1030916990 groups=["Player"]]
+[node name="CollisionStand" type="CollisionShape2D" parent="." unique_id=1030916990]
 position = Vector2(0, 5)
 scale = Vector2(1.1, 1.1)
 shape = SubResource("CapsuleShape2D_boad6")

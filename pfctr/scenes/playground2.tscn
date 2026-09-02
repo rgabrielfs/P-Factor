@@ -50,7 +50,7 @@ metadata/_custom_type_script = "uid://cej4p4vnaw1j3"
 
 [node name="LevelT_02" parent="." unique_id=409620985 instance=ExtResource("5_tulhy")]
 position = Vector2(-15, 296)
-size = 10
+size = 9
 target_level = "uid://biwpjf43oeg7m"
 
 [node name="LevelT_top" parent="LevelT_02" unique_id=1917394845 instance=ExtResource("5_tulhy")]
@@ -58,12 +58,6 @@ position = Vector2(271, -328)
 size = 4
 location = 2
 target_level = "uid://ctji5ss445da"
-
-[node name="LevelT_03" parent="." unique_id=139151256 instance=ExtResource("5_tulhy")]
-position = Vector2(626, 296)
-size = 10
-location = 1
-target_level = "uid://c0rb5w3trr34m"
 
 [node name="Platform" type="Sprite2D" parent="." unique_id=1455267592]
 position = Vector2(297, 217.00002)
@@ -80,7 +74,7 @@ scale = Vector2(0.9999996, 0.99999964)
 shape = SubResource("RectangleShape2D_d8h1i")
 one_way_collision = true
 
-[node name="Platform3" type="Sprite2D" parent="." unique_id=1708997028 groups=["Player"]]
+[node name="Platform3" type="Sprite2D" parent="." unique_id=1708997028]
 position = Vector2(297, 130.5)
 scale = Vector2(2.7187498, 0.13281247)
 texture = ExtResource("6_154ln")

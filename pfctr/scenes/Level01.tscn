@@ -12,7 +12,7 @@ shader_parameter/radius = 0.35
 shader_parameter/softness = 0.45
 shader_parameter/darkness = 0.5
 
-[node name="01" type="Node2D" unique_id=1927396577]
+[node name="Level01" type="Node2D" unique_id=1927396577]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1593012567]
 position = Vector2(-138, 200)
@@ -41,6 +41,6 @@ metadata/_custom_type_script = "uid://cej4p4vnaw1j3"
 
 [node name="LevelT_03" parent="." unique_id=1072128697 instance=ExtResource("5_520st")]
 position = Vector2(627, 296)
-size = 10
+size = 9
 location = 1
 target_level = "uid://cr4vhm31bd2gx"
