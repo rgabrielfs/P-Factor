@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://d20l6if578lab" path="res://general/tilesets/new_tile_set.tres" id="1_2hjy7"]
 [ext_resource type="Shader" uid="uid://1q62w6cndyhr" path="res://shaders/sepiavignetta.gdshader" id="3_mql6g"]
 [ext_resource type="Script" uid="uid://cej4p4vnaw1j3" path="res://player/scripts/level_bounds.gd" id="4_mi0np"]
+[ext_resource type="Texture2D" uid="uid://cxbhhxc2h06dd" path="res://general/tilesets/sprites/light_stream.jpg" id="5_3fcoi"]
 [ext_resource type="PackedScene" uid="uid://b5cvwpxdertfv" path="res://general/level_transition/level_transition.tscn" id="5_520st"]
 
 [sub_resource type="Gradient" id="Gradient_q43x7"]
@@ -20,6 +21,9 @@ shader_parameter/blur_strength = 2.0
 shader_parameter/radius = 0.35
 shader_parameter/softness = 0.45
 shader_parameter/darkness = 0.5
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_3fcoi"]
+polygon = PackedVector2Array(0, 0, 32, 0, 32, 32, 0, 32)
 
 [node name="Level01" type="Node2D" unique_id=1927396577]
 
@@ -58,7 +62,6 @@ tile_map_data = PackedByteArray("AAACAAYAAAAGAAgAAAACAAcAAAAGAAgAAAADAAYAAAAHAAg
 tile_set = ExtResource("1_2hjy7")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=962442788]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1060439994]
 material = SubResource("ShaderMaterial_6cygv")
@@ -84,3 +87,21 @@ size = 9
 location = 1
 target_level = "uid://cr4vhm31bd2gx"
 target_transition_id = "pg2_left"
+
+[node name="PointLight2D4" type="PointLight2D" parent="." unique_id=1734002307]
+position = Vector2(0, 296)
+color = Color(1, 0.8758475, 0.25697583, 1)
+energy = 2.25
+texture = ExtResource("5_3fcoi")
+
+[node name="PointLight2D3" type="PointLight2D" parent="." unique_id=2111435441]
+position = Vector2(439, 24)
+color = Color(1, 0.8758475, 0.25697583, 1)
+energy = 2.25
+shadow_enabled = true
+texture = ExtResource("5_3fcoi")
+offset = Vector2(0, 256)
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1767680166]
+position = Vector2(439, 122)
+occluder = SubResource("OccluderPolygon2D_3fcoi")
