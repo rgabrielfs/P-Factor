@@ -13,6 +13,8 @@ func _ready() -> void:
 
 func transition_scene( new_scene: String, target_area: String, player_offset: Vector2, dir: String ) -> void:
 	
+	get_tree().paused = true 
+	
 	var fade_pos: Vector2 = get_fade_pos( dir )
 	
 	fade.visible = true
@@ -30,6 +32,9 @@ func transition_scene( new_scene: String, target_area: String, player_offset: Ve
 	new_scene_ready.emit( target_area, player_offset )
 	
 	await fade_screen( Vector2.ZERO, -fade_pos )
+	
+	fade.visible = false
+	get_tree().paused = false
 	
 	load_scene_finished.emit()
 	pass
@@ -52,4 +57,5 @@ func get_fade_pos( dir : String ) -> Vector2:
 			pos *= Vector2( 0, -1 )
 		"down":
 			pos *= Vector2( 0, 1 )
+			
 	return pos

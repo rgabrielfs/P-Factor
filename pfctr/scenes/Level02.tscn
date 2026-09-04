@@ -19,7 +19,7 @@ shader_parameter/darkness = 0.5
 [node name="Level02" type="Node2D" unique_id=1927396577]
 
 [node name="Platform" type="Sprite2D" parent="." unique_id=140687600]
-position = Vector2(487.00003, 387.00003)
+position = Vector2(487.00003, 360)
 scale = Vector2(0.8787497, 0.13281247)
 texture = ExtResource("1_w6u7p")
 

@@ -56,7 +56,7 @@ func _on_player_entered(player: Node2D) -> void:
 		target_level,
 		target_transition_id,
 		get_offset(player),
-		"left"
+		get_transition_direction()
 	)
 	
 #func _on_player_entered( _n : Node2D ) -> void:
@@ -120,13 +120,26 @@ func get_offset ( player : Node2D ) -> Vector2:
 
 		SIDE.TOP:
 			offset.x = player_pos.x - global_position.x
-			offset.y = -2
+			offset.y = -40
 
 		SIDE.DOWN:
 			offset.x = player_pos.x - global_position.x
 			offset.y = 37
 
 	return offset
+	
+func get_transition_direction() -> String:
+	match location:
+		SIDE.LEFT:
+			return "left"
+		SIDE.RIGHT:
+			return "right"
+		SIDE.TOP:
+			return "up"
+		_:
+			return "down"
+				
+				
 	
 #func get_offset( player: Node2D ) -> Vector2:
 	#var offset : Vector2 = Vector2.ZERO
